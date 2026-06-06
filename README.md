@@ -117,7 +117,5 @@ If this project helped you find more leads, please give it a **Star**! It helps 
 * **Primary:** Google Maps Scraper, Lead Generation Bot, Business Data Extractor.
 * **Secondary:** Free Scraper, Python Web Scraping, Local SEO tool, B2B Marketing Automation, Google Maps API alternative.
 
-### **Professional Tip:**
-Aap is README ko repository mein `README.md` file bana kar paste kar dein. Isse aapki repo search results mein upar aayegi aur users ko samajhne mein asani hogi ke tool ko kaise use karna hai.
 
 ```

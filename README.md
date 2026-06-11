@@ -1,121 +1,71 @@
+# 🤖 FREE Google Maps Scraper Bot: Unlimited Lead Generation
 
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)](https://www.python.org/)
+[![Selenium](https://img.shields.io/badge/Selenium-Automation-43B02A?logo=selenium)](https://www.selenium.dev/)
+[![Status](https://img.shields.io/badge/Cost-100%25%20Free-brightgreen)](https://github.com/carnoba)
+[![License](https://img.shields.io/badge/License-Open%20Source-orange)](https://github.com/carnoba)
 
- **Detailed README.md Content**
-markdown
-# 📍 FREE Google Maps Scraper Bot 🚀
+A professional-grade, high-performance lead generation tool designed for marketers, developers, and local businesses. This Python-based bot automates the extraction of business data from Google Maps with **zero API costs** and **unlimited scraping capabilities**.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
-[![SEO Optimized](https://img.shields.io/badge/SEO-Optimized-green)](#)
+## 🚀 Why Use This Scraper?
 
-**Automate your Lead Generation with the most efficient and 100% FREE Google Maps Scraper!** This bot is designed for marketers, small business owners, and developers who want to extract business data from Google Maps without paying for expensive APIs or monthly subscriptions.
+Paying for expensive B2B lead platforms or Google API keys is over. This scraper bypasses the need for official APIs by utilizing intelligent web automation, allowing you to build high-quality databases for:
+- Local SEO Audits
+- Cold Email Outreach
+- Competitor Analysis
+- Market Research
 
----
+## ✨ Premium Features
 
-## 🌟 Key Features
-- ✅ **Complete Data Extraction:** Scrapes Business Name, Full Address, Phone Number, Website, Rating, and Review Count.
-- ✅ **No API Key Needed:** Works directly by automating the browser (Selenium/Playwright integration).
-- ✅ **Unlimited Leads:** No restrictions on the number of searches or results.
-- ✅ **Local SEO Ready:** Perfect for identifying businesses that need SEO optimization or digital marketing services.
-- ✅ **CSV/Excel Export:** Saves all scraped data into a clean, structured format for your CRM.
-- ✅ **Human-Like Behavior:** Built-in delays to avoid detection and IP blocks.
-
----
+- **Unlimited Extraction**: No caps on the number of leads you can scrape.
+- **Deep Data Mining**: Extracts Business Name, Phone Number, Address, Website, Ratings, and Review Count.
+- **Auto-Navigation**: Automatically handles pagination, scrolling, and infinite load elements.
+- **Export Ready**: Saves data directly into clean, structured CSV files for immediate use.
+- **Headless Mode Support**: Run the bot in the background without interrupting your workflow.
+- **Anti-Detect Measures**: Built-in delays and behavior patterns to reduce blocking risk.
 
 ## 🛠 Tech Stack
-- **Language:** Python 3.x
-- **Automation:** Selenium WebDriver / BeautifulSoup4
-- **Data Handling:** Pandas
-- **Browser:** Google Chrome (Chromedriver)
 
----
+- **Engine**: Python
+- **Automation**: Selenium WebDriver
+- **Parsing**: BeautifulSoup4 / Selenium Selectors
+- **Data Structuring**: Pandas
 
-## 🚀 Getting Started
-
-### 1. Prerequisites
-Make sure you have [Python](https://www.python.org/downloads/) and [Google Chrome](https://www.google.com/chrome/) installed.
-
-### 2. Installation
-Clone this repository to your local machine:
-```bash
-git clone [https://github.com/carnoba/FREE-google-mas-scraper-bot-.git](https://github.com/carnoba/FREE-google-mas-scraper-bot-.git)
-cd FREE-google-mas-scraper-bot-
+## 📁 Repository Structure
 
 ```
-
-### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-
+├── selenium bot/           # Core automation engine and scripts
+├── (Outputs)/              # Automatically generated lead CSVs
+└── README.md               # User manual and documentation
 ```
 
-### 4. Run the Bot
+## ⚙️ Installation & Usage
 
-Execute the script and enter your search query (e.g., "Web Developers in Dubai"):
+1. **Clone the Repo**:
+   ```bash
+   git clone https://github.com/carnoba/FREE-google-maps-scraper-bot.git
+   ```
+2. **Install Dependencies**:
+   ```bash
+   pip install -r "selenium bot/requirements.txt"
+   ```
+3. **Configure Settings**:
+   Edit the target search queries in the main script.
+4. **Execute**:
+   ```bash
+   python "selenium bot/main.py"
+   ```
 
-```bash
-python main.py
+## 🛡️ Disclaimer
 
-```
+This tool is for educational and research purposes only. Ensure you comply with Google’s Terms of Service and local data privacy laws (GDPR, etc.) when scraping public data.
 
----
+## ⭐ Show your Support!
 
-## 📊 Scraped Data Points
-
-The bot extracts the following fields for every business:
-| Field | Description |
-| :--- | :--- |
-| **Name** | Legal Business Name |
-| **Phone** | Primary Contact Number |
-| **Website** | Official URL (if available) |
-| **Address** | Physical Location |
-| **Rating** | Star rating out of 5.0 |
-| **Reviews** | Total number of customer reviews |
-| **Category** | Business niche/type |
-
----
-
-## 💡 Use Cases
-
-* 🎯 **B2B Lead Generation:** Build a massive list of potential clients in minutes.
-* 📈 **Market Research:** Analyze competitors in specific geographic locations.
-* 🔍 **Local SEO Audits:** Find businesses with low ratings or missing websites to offer your services.
-* 📧 **Cold Outreach:** Gather contact details for email or cold calling campaigns.
+If this tool saves you money on lead generation, please give it a **Star**! 🌟
 
 ---
+**Maintained by [Carnoba](https://github.com/carnoba)**
 
-## ⚠️ Disclaimer
-
-This tool is for educational purposes only. Please ensure you comply with Google's Terms of Service and local data privacy laws (like GDPR) when scraping data. Use responsibly!
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you have ideas for new features or bug fixes:
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## ⭐ Support
-
-If this project helped you find more leads, please give it a **Star**! It helps others find this tool.
-
-**Developed by [Carnoba**](https://www.google.com/search?q=https://github.com/carnoba)
-
-
-
----
-
-### **SEO Keywords Used:**
-* **Primary:** Google Maps Scraper, Lead Generation Bot, Business Data Extractor.
-* **Secondary:** Free Scraper, Python Web Scraping, Local SEO tool, B2B Marketing Automation, Google Maps API alternative.
-
-
-```
+#Tags
+#GoogleMaps #WebScraping #LeadGeneration #B2BMarketing #Python #Selenium #Automation #SEO #DataExtraction #FreeTools

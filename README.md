@@ -5,7 +5,7 @@
 [![Status](https://img.shields.io/badge/Cost-100%25%20Free-brightgreen)](https://github.com/carnoba)
 [![License](https://img.shields.io/badge/License-Open%20Source-orange)](https://github.com/carnoba)
 
-A professional-grade, high-performance lead generation tool designed for marketers, developers, and local businesses. This Python-based bot automates the extraction of business data from Google Maps with **zero API costs** and **unlimited scraping capabilities**.
+A professional-grade, high-performance lead generation tool designed for marketers, developers, and local businesses. This Python-based bot automates the extraction of business data from Google Maps with **zero API costs** and **unlimited scraping capabilities**..
 
 ## 🚀 Why Use This Scraper?
 

@@ -14,7 +14,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 # ==========================================
-# 🔥 MISSION CONFIGURATION (RECURSIVE AGENT) 🔥
+#  MISSION CONFIGURATION (RECURSIVE AGENT) 
 # ==========================================
 GEMINI_CMD = "gemini-cli" # Change to "gemini" if needed
 
@@ -55,7 +55,7 @@ def setup_stealth_driver():
     return driver
 
 # ==========================================
-# 🧠 AI RECURSIVE BRAIN
+# AI RECURSIVE BRAIN
 # ==========================================
 def call_gemini_ai(prompt):
     """Deep data synthesis using Gemini CLI."""
@@ -70,7 +70,7 @@ def call_gemini_ai(prompt):
 
 def recursive_intel_hunt(driver, business_name, city, niche, website="N/A"):
     """Recursive search engine for Decision Makers."""
-    print(f"   🕵️ INFILTRATING: {business_name}")
+    print(f"    INFILTRATING: {business_name}")
     
     original_window = driver.current_window_handle
     driver.execute_script("window.open('about:blank', '_blank');")
@@ -82,7 +82,7 @@ def recursive_intel_hunt(driver, business_name, city, niche, website="N/A"):
     try:
         # STEP 1: Website Deep Scan
         if website != "N/A" and "http" in website:
-            print(f"      🌐 Deep Scanning Website...")
+            print(f"       Deep Scanning Website...")
             driver.get(website)
             time.sleep(3)
             # Try finding 'About' or 'Team'
@@ -97,14 +97,14 @@ def recursive_intel_hunt(driver, business_name, city, niche, website="N/A"):
                 except: continue
 
         # STEP 2: Social Dorking (Finding the Name)
-        print(f"      📡 Hunting Social Profiles...")
+        print(f"       Hunting Social Profiles...")
         query_name = f'"{business_name}" {city} (owner OR founder OR CEO OR president)'
         driver.get(f"https://www.google.com/search?q={query_name.replace(' ', '+')}")
         time.sleep(3)
         
         # Check for Recaptcha (Manual wait if needed)
         if "sorry/index" in driver.current_url:
-            print("      ⚠️ CAPTCHA DETECTED! Use browser to solve.")
+            print("       CAPTCHA DETECTED! Use browser to solve.")
             time.sleep(15) 
 
         snippets = driver.find_elements(By.CSS_SELECTOR, "div.VwiC3b")
@@ -117,7 +117,7 @@ def recursive_intel_hunt(driver, business_name, city, niche, website="N/A"):
 
         # STEP 4: RECURSIVE SEARCH (If Name Found, Search for Mobile)
         if found_owner_name != "N/A" and len(found_owner_name) > 3:
-            print(f"      🔥 RECURSIVE HUNT: Tracking {found_owner_name}'s direct line...")
+            print(f"       RECURSIVE HUNT: Tracking {found_owner_name}'s direct line...")
             track_query = f'"{found_owner_name}" "{business_name}" (cell OR mobile OR personal OR contact)'
             driver.get(f"https://www.google.com/search?q={track_query.replace(' ', '+')}")
             time.sleep(2)
@@ -152,7 +152,7 @@ def recursive_intel_hunt(driver, business_name, city, niche, website="N/A"):
             return parts[0], parts[1], parts[2], parts[3], parts[4], parts[5]
 
     except Exception as e:
-        print(f"      ⚠️ Intelligence Failure: {e}")
+        print(f"       Intelligence Failure: {e}")
     finally:
         driver.close()
         driver.switch_to.window(original_window)
@@ -160,7 +160,7 @@ def recursive_intel_hunt(driver, business_name, city, niche, website="N/A"):
     return found_owner_name, "N/A", "N/A", "N/A", "No", "N/A"
 
 # ==========================================
-# 🚀 EXECUTE WARFARE
+#  EXECUTE WARFARE
 # ==========================================
 def extract_leads():
     driver = setup_stealth_driver()
@@ -176,7 +176,7 @@ def extract_leads():
         for city in CITIES:
             for niche, loss in NICHES.items():
                 query = f"{niche} in {city}"
-                print(f"\n🚀 MISSION START: {query}")
+                print(f"\n MISSION START: {query}")
                 
                 driver.get(f"https://www.google.com/maps/search/{query.replace(' ', '+')}")
                 time.sleep(5)
@@ -235,7 +235,7 @@ def extract_leads():
 
     finally:
         driver.quit()
-        print(f"\n⚡ MISSION COMPLETE: {len(processed_leads)} targets stored in {OUTPUT_CSV}")
+        print(f"\n MISSION COMPLETE: {len(processed_leads)} targets stored in {OUTPUT_CSV}")
 
 if __name__ == "__main__":
     extract_leads()

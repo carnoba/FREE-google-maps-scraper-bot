@@ -14,9 +14,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 # ==========================================
-#  MISSION CONFIGURATION (RECURSIVE AGENT) 
+# CONFIGURATION 
 # ==========================================
-GEMINI_CMD = "gemini-cli" # Change to "gemini" if needed
 
 CITIES = [ "Casper", "Cheyenne", "Gillette", "Rock Springs", "Laramie"]
 NICHES = {
@@ -31,11 +30,11 @@ NICHES = {
 OUTPUT_CSV = "unlimited_leads.csv"
 
 # ==========================================
-# 🛠️ STEALTH SYSTEM (ANTI-ROBOT)
+# SYSTEM
 # ==========================================
 def setup_stealth_driver():
     chrome_options = Options()
-    # chrome_options.add_argument("--headless") # Headless off for captcha solving if needed
+  
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--window-size=1600,900")
     chrome_options.add_argument("--no-sandbox")
@@ -55,7 +54,7 @@ def setup_stealth_driver():
     return driver
 
 # ==========================================
-# AI RECURSIVE BRAIN
+# BRAIN
 # ==========================================
 def call_gemini_ai(prompt):
     """Deep data synthesis using Gemini CLI."""
@@ -160,13 +159,10 @@ def recursive_intel_hunt(driver, business_name, city, niche, website="N/A"):
     return found_owner_name, "N/A", "N/A", "N/A", "No", "N/A"
 
 # ==========================================
-#  EXECUTE WARFARE
-# ==========================================
-def extract_leads():
-    driver = setup_stealth_driver()
+
+
     processed_leads = []
-    
-    # Load existing to avoid dupes
+
     if os.path.exists(OUTPUT_CSV):
         existing_names = pd.read_csv(OUTPUT_CSV)['Business Name'].tolist()
     else:
@@ -210,7 +206,7 @@ def extract_leads():
                             website = driver.find_element(By.XPATH, '//a[contains(@aria-label, "Website")]').get_attribute("href")
                         except: pass
 
-                        # RECURSIVE DEEP INTEL
+                        
                         o_name, d_phone, p_email, l_profile, h_status, loss_reason = recursive_intel_hunt(driver, name, city, niche, website)
                         
                         lead = {

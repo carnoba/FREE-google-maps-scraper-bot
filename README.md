@@ -53,7 +53,8 @@ Paying for expensive B2B lead platforms or Google API keys is over. This scraper
    Edit the target search queries in the main script.
 4. **Execute**:
    ```bash
-   python "selenium bot/main.py"
+   python "selenium bot/selenium_scout.py"
+
    ```
 
 ## 🛡️ Disclaimer
